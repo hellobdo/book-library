@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Book Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>test</p>
+    <button class="newBook">New Book</button>
+    <ul class="listOfBooks"></ul>
+    <form id="bookForm">
+        <!-- Title Field -->
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <!-- Author Field -->
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <!-- Pages Field -->
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" name="pages" min="1" required><br><br>
+
+        <!-- Read Field (Boolean) -->
+        <label for="read">Read:</label>
+        <input type="checkbox" id="read" name="read">
+        <label for="read">I have read this book</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" id="submitBook">
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
