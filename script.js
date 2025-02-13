@@ -65,6 +65,10 @@ const bookPages = document.getElementById("pages");
 const bookRead = document.getElementById("read");
 
 submitBook.addEventListener('click', (event) => {
+  if (!bookTitle.value || !bookAuthor.value || !bookPages.value) {
+    alert("Please fill in all field before submission");
+    return
+  }
   event.preventDefault();
   
   const title = bookTitle.value;
